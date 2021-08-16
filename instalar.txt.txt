@@ -1,0 +1,2 @@
+yarn add styled-components axios
+yarn add  -D @types/styled-components @types/axios

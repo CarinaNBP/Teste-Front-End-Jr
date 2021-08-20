@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import redeImg from "../../assets/rede.png";
+import { borderRadius, borderShadowDefault } from "../../styles";
 
 export const HomeStyled = styled.div`
   margin: 0 auto;
@@ -21,7 +22,8 @@ export const NotFoundMessage = styled.span`
   color: white;
   background-color: var(--light-blue);
   padding: 1rem;
-  border: 0.15rem solid var(--light-orange);
-  border-radius: 0.25rem;
+  border: 0.3rem solid var(--light-orange);
+  ${borderRadius}
   margin-left: 3rem;
+  ${borderShadowDefault}
 `;

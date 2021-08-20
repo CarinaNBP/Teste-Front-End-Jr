@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { borderRadius, borderShadowDefault } from "../../styles";
 
 export const SearchBarStyled = styled.form`
   margin-left: 3rem;
@@ -28,6 +29,7 @@ export const SearchBarStyled = styled.form`
       outline: none;
 
       cursor: pointer;
+      ${borderShadowDefault}
     }
 
     button {
@@ -36,12 +38,13 @@ export const SearchBarStyled = styled.form`
       height: 2.5rem;
       border: none;
       color: var(--white);
-      border-radius: 1rem;
+      ${borderRadius}
       background: var(--light-orange);
 
       cursor: pointer;
 
       transition: filter 0.2s;
+      ${borderShadowDefault}
 
       &:hover {
         filter: brightness(0.8);

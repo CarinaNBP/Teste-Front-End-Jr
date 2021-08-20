@@ -7,11 +7,9 @@ type SearchBarProps = {
 export function SearchBar({ onSubmit }: SearchBarProps) {
   return (
     <SearchBarStyled onSubmit={onSubmit}>
-      <p>
-        <h1>
-          Buscar perfil no <span>GitHub</span>
-        </h1>
-      </p>
+      <h1>
+        Buscar perfil no <span>GitHub</span>
+      </h1>
       <div>
         <input
           type="text"

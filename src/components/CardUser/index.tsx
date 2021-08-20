@@ -4,9 +4,9 @@ import { CardUserStyled } from "./styles";
 export function CardUser({ user }: { user: User }) {
   return (
     <CardUserStyled>
-      <img src={user?.avatar_url}></img>
+      <img src={user?.avatar_url} alt="user avatar"></img>
       <div>
-        <a href="">
+        <a href={user.html_url} target="_blank" rel="noopener noreferrer">
           <h1>{user?.name || user?.login}</h1>
         </a>
         <h2>{user?.bio}</h2>
